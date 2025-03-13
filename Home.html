@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="Darryl Cooper" content="">
+  <meta name="DiabetesPal Prototype" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/redmond/jquery-ui.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <a href="Home.html"><div class="d-flex justify-content-center" id="iphone">
+      <h1 style="padding-right: 10px;">DiabetesPal</h1>
+      <img src="dpal.png" height="55" width="50" style="padding-top: 5px;">
+</div></a>
+<div class="text-center">
+  <p>Click the iPhone</p>
+</div>
+
+<div class="d-flex justify-content-center justify-text-centre">
+    <img id="home" src="homed.png" height="610px" width="390px">
+    <iframe id="main" src="main.html" height="610px" width="394px" scrolling="no" style="position: fixed; z-index: 999; display: none; position: fixed; border-radius: 1px 1px 10px 10px;  
+    border-style: outset;">
+    </iframe>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(document).ready(function () {
+      $("#home").click( function () {
+        $("#main").fadeIn("med");
+        $("#iphone").hide();
+
+  });
+    });
+    
+    </script>
+    
+</body>
+<footer style="position: fixed; bottom: 0;">
+  <p>© 2019 Darryl Cooper (UP955361) - Ronan McCarthy - Václav Hložek - Olu Isaac</p>
+  <h3 style="position: fixed ; right: 0; bottom: 0;">Team DROV</h3>
+</footer>
+
+</html>
